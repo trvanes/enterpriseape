@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 # Set ruby version so it doesn't bark at me
-ruby '2.1.1'
+group :production do
+  ruby '2.0.0'
+end
+
+group :development do
+  ruby '2.1.1'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
